@@ -1,0 +1,59 @@
+.grid {
+  display: grid;  
+  gap:10px;
+    grid-template-areas: 
+  "header"
+  "nav"
+  "h4"
+  "h4"
+  "h4"
+  "footer"
+  }
+
+  .header { 
+  grid-area: header;
+ }
+ .header_nav {
+  grid-area: nav;
+ }
+ .hacheCuatro {
+  grid-area: h4;
+ }
+ .footer {
+  grid-area: footer;
+ }
+
+  body {
+      background-image: linear-gradient(to bottom, #99753C , #BF934B, #B38946, #73582D);
+      font-family: 'Gruppo', cursive;
+      font-size: 1.2rem;
+      min-height: 100%;
+      }
+
+  @keyframes identifier { 
+   0% { width: 100px; }
+   25% { width: 300px; }
+   50% { width: 200px; }
+   background-color: brown;}
+   75% {width: 300px; }
+   100% { width: 100px; }
+   background-color: brown;}
+
+   @media only screen and (min-width: 480px) {
+    .grid {
+            background-color: #B38946;
+      }
+
+   .padre-flex {
+   display: flex;
+   flex-direction: row-reverse;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+}
+.padreFlex {
+   display: flex;  
+   flex-direction: row; 
+   justify-content: space-between;
+   align-items: stretch;
+   flex-wrap: wrap;
+}
